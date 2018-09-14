@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+    <title>Privilégios</title>
+  </head>
+  <body>
+    <div class="container" id="conteudo">
+        <h5>Usuário - Tidinha</h5>
+        <div class="row" id="alvo">
+            
+            
+
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery/jquery-3.3.1.slim.min.js" ></script>
+    <script src="pooper/popper.min.js" ></script>
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+
+    <script src="icone.js"></script>
+    <script>
+      const alvo=document.querySelector('#alvo');
+      const conteudo=document.querySelector('#conteudo');
+
+      conteudo.style.marginTop='5em';
+
+        icones.map((f)=>{
+          let coluna=`
+          <div class="col-md-4">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="${f.id_icon}">
+                <label class="form-check-label" for="${f.id_icon}">
+                  ${f.title}
+                </label>
+
+              </div>
+            </div>
+          `
+              alvo.innerHTML +=coluna;
+
+
+        })
+
+    
+    </script>
+  </body>
+</html>

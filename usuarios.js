@@ -1,0 +1,26 @@
+const usuarios=[
+    {
+        id:'1',
+        nome:'Afronesio',
+        chave:'123455',
+        email:'afro@ggg.com'
+    },
+    {
+        id:'2',
+        nome:'Mario',
+        chave:'98765',
+        email:'mario@ggg.com'
+    },
+    {
+        id:'3',
+        nome:'Robertino',
+        chave:'5677899',
+        email:'rober@ggg.com'
+    },
+    {
+        id:'4',
+        nome:'Genevésia',
+        chave:'6666666',
+        email:'gene@ggg.com'
+    }
+]

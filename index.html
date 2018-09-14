@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+
+    <title>REvisão</title>
+  </head>
+  <body>
+    <div class="container" id="conteudo">
+        <h4>Usuários</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td scope="col"></td>
+                    <td scope="col">Nome</td>
+                    <td scope="col">Chave</td>
+                    <td scope="col">Email</td>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        
+    </div>
+
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="jquery/jquery-3.3.1.slim.min.js" ></script>
+    <script src="pooper/popper.js/1.14.3/umd/popper.min.js" ></script>
+    <script src="bootstrap/js/bootstrap.min.js" ></script>
+    <script src="usuarios.js"></script>
+    <script>
+        const tbody=document.querySelector('tbody');
+
+        usuarios.map((f)=>{
+            let linhas=`
+                <tr>
+                    <td><input type="radio" name="usuario" value="${f.id}"></td>
+                    <td>${f.nome}</td>
+                    <td>${f.chave}</td>
+                    <td>${f.email}</td>
+                </tr>
+            `
+            tbody.innerHTML +=linhas;
+        })
+    
+    
+    </script>
+
+  </body>
+</html>
